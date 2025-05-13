@@ -185,10 +185,10 @@ interface InfoPillProps {
   text: string;
 }
 const InfoPill: React.FC<InfoPillProps> = ({ icon, text }) => (
-  <div className="flex items-center space-x-1 sm:space-x-1.5 bg-[#2A2A3D] text-gray-300 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-full text-[10px] sm:text-xs">
+  <div className="flex items-center space-x-1 sm:space-x-1.5 bg-[#2A2A3D] text-gray-300 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-full text-[10px] sm:text-xs mt-1 ">
     {icon}{" "}
     {/* Icon size will be handled by its own responsive classes if needed */}
-    <span>{text}</span>
+    <span className="p-2">{text}</span>
   </div>
 );
 
